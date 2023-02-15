@@ -1,0 +1,160 @@
+:root{
+    --blue: #02A3F1;
+    --green: #7FBA00;
+    --white: #FFFFFF;
+    --orange: #F25123;
+    --textColor: rgba(0, 0, 0, 0.5);
+    --pagePadding: 70px;
+}
+
+.home{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0 var(--pagePadding);
+}
+
+.home .info h1{
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.home .logo img{
+    width: 540px;
+}
+
+.home .info .search-container input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+.home .info .search-container input:focus{
+    outline: none;
+}
+
+.home .info .search-container{
+    display: flex;
+    gap: 10px;
+    padding: 13px 15px;
+    border-radius: 30px;
+    background-image: url(../images/background_blur.png);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.home .info .search-container svg{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.home .info .search-container svg:first-child{
+    fill: rgba(255, 255, 255, 0.25);;
+}
+
+.home .info .search-container svg:nth-child(3){
+    fill: var(--orange);
+}
+
+.home .info .people-container .people-photos{
+    display: flex;
+    padding-right: 15px;
+}
+
+.home .info .people-container .people-photos div{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.home .info .people-container .people-photos div:first-child{
+    border: 5px solid;
+    color: var(--blue);
+    background-image: url(../images/people/pexels-lola-russian-1855582.jpg) ;
+}
+.home .info .people-container .people-photos div:nth-child(2){
+    border: 5px solid;
+    color: var(--green);
+    background-image: url(../images/people/pexels-marcio-bordin-1840608\ \(1\).jpg) ;
+    margin-left:-20px ;
+}
+.home .info .people-container .people-photos div:nth-child(3){
+    border: 5px solid;
+    color: var(--white);
+    background-image: url(../images/people/pexels-mateus-souza-3586798\ \(1\).jpg) ;
+    margin-left:-20px ;
+}
+.home .info .people-container .people-photos div:nth-child(4){
+    border: 5px solid;
+    color: var(--orange);
+    background-image: url(../images/people/pexels-radu-florin-2506897.jpg) ;
+    margin-left:-20px ;
+}
+
+.home .info .people-container{
+    display: flex;
+}
+
+.home .info .people-container .people-info{
+    display: flex;
+    gap: 25px;
+}
+
+.home .info .people-container .people-info div h1{
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.home .info .people-container .people-info div p{
+    color: #FFFFFF80;
+    text-align: center;
+}
+
+.home .info > *{
+    margin-bottom: 40px;
+}
+
+.home .logo {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1120px){
+    .home .logo {
+        width: 1000px;
+    }
+
+    .home .logo img{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width:930px){
+    .home .logo{
+        display: none;
+    }
+
+    .home .info{
+        width: 100%;
+    }
+}
+
+@media(max-width:587px){
+    .people-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:536px){
+    .home .info h1{
+        font-size: 50px;
+    }
+}
